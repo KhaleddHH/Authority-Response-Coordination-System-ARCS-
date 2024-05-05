@@ -1,0 +1,38 @@
+.promo_card {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 0;
+  text-align: center;
+  height: 400px;
+  justify-content: center;
+}
+.promo_card img {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 50%;
+}
+.profile-option {
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background-color: grey;
+}
+.profile-option:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.profile-option a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}

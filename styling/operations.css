@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+  --green: #27ae60;
+  --black: #333;
+  --white: #fff;
+  --bg-color: #eee;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 0.1rem solid var(--black);
+}
+body{
+  background: rgb(219, 219, 219);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  background: var(--green);
+  color: var(--white);
+  text-align: center;
+}
+
+.btn:hover {
+  background: var(--black);
+}
+
+.message {
+  display: block;
+  background: var(--bg-color);
+  padding: 1.5rem 1rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container2 {
+  max-width: 1200px;
+  padding: 2rem;
+  padding-left: 75%;
+  box-sizing: border-box;
+}
+
+.admin-product-form-container.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.admin-product-form-container form {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: var(--bg-color);
+}
+
+.admin-product-form-container form h3 {
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.admin-product-form-container form .box {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1.2rem 1.5rem;
+  font-size: 1.7rem;
+  margin: 1rem 0;
+  background: var(--white);
+  text-transform: none;
+}
+
+.product-display {
+  margin: 2rem 0;
+}
+
+.product-display .product-display-table {
+  width: 100%;
+  text-align: center;
+}
+
+.product-display .product-display-table thead {
+  background: var(--bg-color);
+}
+
+.product-display .product-display-table th {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.product-display .product-display-table td {
+  padding: 1rem;
+  font-size: 2rem;
+  border-bottom: var(--border);
+}
+
+.product-display .product-display-table .btn:first-child {
+  margin-top: 0;
+}
+
+.product-display .product-display-table .btn:last-child {
+  background: crimson;
+}
+
+.product-display .product-display-table .btn:last-child:hover {
+  background: var(--black);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-display {
+    overflow-y: scroll;
+  }
+
+  .product-display .product-display-table {
+    width: 80rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px;
+  background: #fff;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 2rem 8rem 2rem 2rem;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  padding: 9px;
+  width: 250px;
+  background: rgb(228, 228, 228);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search i {
+  padding: 0.66rem;
+  cursor: pointer;
+  color: #fff;
+  background: #000;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+.profile-section i {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.profile-section .account {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-section .account img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.container {
+  float: left;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Side menubar section */
+nav {
+  background: #fff;
+}
+.side-nav {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+}
+.side-nav span {
+  color: gray;
+  margin: 1rem 3rem;
+  font-size: 12px;
+}
+.side-nav a {
+  width: 100%;
+  padding: 0.8rem 3rem;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(100, 100, 100);
+}
+.links {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.links a {
+  font-size: 13px;
+}
+.side-nav a:hover {
+  background: rgb(235, 235, 235);
+}
+.side-nav .active {
+  border-left: 2px solid rgb(100, 100, 100);
+}
+.user-img {
+  object-fit: contain;
+}

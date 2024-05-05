@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css"> 
+        <title>
+            Login
+        </title>
+    </head>
+    <body>       
+            <div class="signup-wrapper">
+            <h1>Sign up</h1>
+            <form action="signup.php" method="POST" id="signup-form">
+                <label for="username">Username</label>
+                <br>
+                <input type="text" name="username" id="username" class="text-field" placeholder="john.doe">
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" id="password" class="text-field">
+                <br>
+                <label for="confirm-password">Confirm password</label>
+                <br>
+                <input type="password" name="confirm-password" id="confirm-password" class="text-field">
+                <br>
+                <label for="first-name">First name</label>
+                <br>
+                <input type="text" name="first-name" id="first-name" class="text-field" placeholder="John">
+                <br>
+                <label for="last-name">Last name</label>
+                <br>
+                <input type="text" name="last-name" id="last-name" class="text-field" placeholder="doe" >
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="text" name="email" id="email" class="text-field" placeholder="user@example.com">
+                <br>
+                <label for="date-of-birth">Date of birth</label>
+                <br>
+                <input type="date" name="date-of-birth" id="date-of-birth">
+                <input type="text" name="permission" id="permission" value="user" style="display:none;">
+                <br><br>
+                
+                
+                
+                <input type="button" value="Sign up" onclick="signup()" id="submit-button" class="submit-button">
+            <p>Already have an account? <a href="../index.php">Login</a></p>
+        </div>
+    
+<script>
+    function signup(){
+        var form =document.querySelector("form[id='signup-form']");
+        var username = form.elements["username"].value;
+        var password = form.elements["password"].value;
+        var confirmPassword = form.elements["confirm-password"].value;
+        var firstName = form.elements["first-name"].value;
+        var lastName = form.elements["last-name"].value;
+        var email = form.elements["email"].value;
+        var dob = form.elements["date-of-birth"].value;
+        
+        if (username == ""|| password == "" || confirmPassword == "" || firstName == ""  || lastName == "" || email == "" || dob ==""){
+            alert("All fields must be filled!");
+        } else if(password != confirmPassword) {
+            alert("Passwords not matching!");
+        }else{
+            document.getElementById("signup-form").submit();    
+        }
+        
+
+    }
+</script>
+</body>
+</html>

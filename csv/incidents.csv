@@ -1,0 +1,15 @@
+"Inicident ID","Incident type"," Date"," Time"," Location"," Description"," reported by","Assigned Vehicle"
+1,Accident,2024-07-03,14:03,beirut,"2 cars",user,Motorcycle
+2,Vandalism,2024-02-02,02:02,222,222,user,Helicopter
+3,Theft,2024-04-27,19:00,Beirut,"2 suspects",user,SUV
+4,Vandalism,2024-02-02,23:11,location," description",admin,"Undercover Vehicle"
+5,Accident,2024-03-03,14:02,beirut,.....,a,"Patrol Car"
+6,Burglary,2024-03-03,15:03,beirut,asdfasdfsdf,g,"Patrol Car"
+7,Accident,2024-02-02,15:03,location,aaa,user,"Armored Vehicle"
+8,Accident,2024-03-03,03:03,as,asd,admin,"Patrol Car"
+9,Accident,2004-03-03,10:30,location1," description1",bitar,"Patrol Car"
+10,Theft,2024-04-29,10:00,"mar elias","I was cruising on my motorcycle and 2 armed men  stole my bike help pls",malek,Helicopter
+11,"Drug-related Incident",3333-12-02,,"beirut hamra","saw 2h33ihi",malek,"Patrol Car"
+12,"Missing Person",1111-11-11,12:22,"mar elias",bjajKbfkjabfkja,malek,"Patrol Car"
+13,Burglary,2003-12-12,22:00,Beirut," LAU",ISAJASHJjahjahsjhajahaj,malek
+14,Drug-related Incident,2012-12-12,00:12,zalka,serj gave me 2 gs,bitar,none

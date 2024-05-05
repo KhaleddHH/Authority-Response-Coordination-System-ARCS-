@@ -1,0 +1,5 @@
+username,password,permission,first-name,last-name,email,date-of-birth
+admin,admin,admin,john,doe,admin@gmail.com,2004-03-03
+user,user,user,john,doe,user@gmail.com,2004-03-03
+bitar,bitarse,user,Khaled,Hasbini,Khaled.Hasbini@lau.edu,2003-12-07
+malek,malek2003abed,user,mallouk,shiyaka,Khaled.hasbini@lau.edu,2003-03-18
